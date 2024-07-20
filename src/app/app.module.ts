@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 
+import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,9 +21,15 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
 
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+
+    RippleModule,
+    ButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
