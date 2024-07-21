@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { MenubarModule } from 'primeng/menubar';
 
 
 @Component({
@@ -11,10 +10,10 @@ import { MenubarModule } from 'primeng/menubar';
 export class MenuComponent  implements OnInit {
 
   // public menuItems: MenuItem[] = [];
-  public menuBar: MenubarModule[] = [];
+  public menuItems: MenuItem[] = [];
 
   ngOnInit() {
-    this.menuBar = [
+    this.menuItems = [
         {
           label: 'Pipes de angular',
           icon: 'pi pi-desktop',
@@ -22,14 +21,17 @@ export class MenuComponent  implements OnInit {
             {
               label: 'Textos y Fechas',
               icon: 'pi pi-align-left',
+              routerLink: '/',
             },
             {
               label: 'Numeros',
               icon: 'pi pi-dollar',
+              routerLink: '/numbers',
             },
             {
               label: 'No comunes',
               icon: 'pi pi-globe',
+              routerLink: '/uncommon'
             },
           ]
         },
