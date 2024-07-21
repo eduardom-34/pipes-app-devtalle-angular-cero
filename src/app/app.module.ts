@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 
-import { RippleModule } from 'primeng/ripple';
+
 
 
 @NgModule({
@@ -21,9 +21,6 @@ import { RippleModule } from 'primeng/ripple';
 
     SharedModule,
     BrowserAnimationsModule,
-
-
-    RippleModule,
 
   ],
   providers: [],
