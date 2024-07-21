@@ -9,7 +9,6 @@ import { SharedModule } from './shared/shared.module';
 
 
 import { RippleModule } from 'primeng/ripple';
-import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -25,7 +24,6 @@ import { ButtonModule } from 'primeng/button';
 
 
     RippleModule,
-    ButtonModule
 
   ],
   providers: [],

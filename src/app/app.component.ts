@@ -8,6 +8,8 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent {
 
+  title = 'pipesApp';
+
 
   constructor(private primengConfig: PrimeNGConfig) {}
 
